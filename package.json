@@ -4,20 +4,15 @@
   "description": "",
   "main": "players-schema.js",
   "scripts": {
-    "test": "jest --verbose",
-    "test-watch": "jest --watchAll --verbose",
     "lint": "eslint server.js",
     "start": "node server.js",
     "dev": "json-server --id=_id --watch db.json --routes routes.json"
   },
-  "jest": {
-    "testEnvironment": "node"
-  },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jest": "^24.8.0",
     "mongodb-memory-server": "^5.1.5",
     "mongoose": "^5.6.1",
     "supertest": "^4.0.2",
