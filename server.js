@@ -11,12 +11,12 @@ const middleware = jsonServer.defaults();
 router.render = (request, response) => {
   response.jsonp({
     results: response.locals.data,
-  })
-}
+  });
+};
 
 server.use(router);
 server.use(middleware);
 
 server.listen(3000, () => {
   console.log('json server awaiting requests');
-})
+});
